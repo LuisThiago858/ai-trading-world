@@ -1,0 +1,29 @@
+.analysis-center { margin-top: 18px; }
+.analysis-status { border: 1px solid var(--border); border-radius: 99px; padding: 5px 8px; color: var(--muted); font-size: 9px; font-weight: 800; }
+.analysis-status.completed { color: var(--mint); border-color: #68e4cd66; }
+.analysis-status.failed { color: #ff8ba1; border-color: #ff4d6d66; }
+.asset-picker { display: flex; gap: 16px; margin: 0 0 12px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; }
+.asset-picker legend { padding: 0 6px; color: var(--muted); font-size: 10px; }
+.asset-picker label { display: flex; align-items: center; gap: 7px; font-size: 11px; }
+.analysis-actions { display: flex; gap: 8px; }
+.analysis-actions button { border: 1px solid var(--border); border-radius: 9px; padding: 10px 13px; color: #f4f8ff; background: #101d2d; cursor: pointer; }
+.analysis-actions .primary-button { color: #041812; background: var(--mint); }
+.agent-progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
+.agent-progress div { display: grid; gap: 4px; padding: 10px; border: 1px solid var(--border); border-radius: 9px; background: #07111f80; }
+.agent-progress span { font-size: 11px; }
+.agent-progress strong { color: var(--muted); font-size: 8px; }
+.mock-notice { padding: 9px; border: 1px solid #ffbd6644; border-radius: 8px; color: #ffd18f; background: #ffbd660d; font-size: 10px; }
+.agent-result, .hold-result, .ai-proposal { margin-top: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: #07111f80; }
+.agent-result p, .hold-result p, .ai-proposal p { margin: 6px 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.agent-result small, .ai-proposal span { color: var(--muted); font-size: 9px; }
+.hold-result { border-color: #68e4cd55; }
+.ai-proposal { border-color: #bd72ff66; }
+.ai-proposal .decision-actions { margin-top: 12px; }
+.analysis-history { display: flex; justify-content: space-between; margin-top: 14px; color: var(--muted); font-size: 10px; }
+.agent-latest { margin-top: 12px; }
+.agent-latest p { color: var(--muted); font-size: 11px; line-height: 1.5; }
+.agent-latest small { color: var(--mint); font-size: 9px; }
+.status-dot.error { background: #ff4d6d; }
+.status-dot.completed { background: #60e6a8; }
+.status-dot.analyzing, .status-dot.reviewing, .status-dot.waiting_approval { background: #ffd18f; }
+@media(max-width: 620px) { .agent-progress { grid-template-columns: 1fr; } .asset-picker { flex-direction: column; } }
